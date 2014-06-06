@@ -44,7 +44,7 @@ img{border:none;}
 .pic7{width: 1000px; height:620px; background: url("../images/pic7.png") no-repeat; border: 0px solid #000000;}
 .pic8{width: 1000px; height:295px; background: url("../images/pic8.png") no-repeat; border: 0px solid #000000;}
 .pic9{width: 1000px; height:690px; background: url("../images/pic9.png") no-repeat; border: 0px solid #000000;}
-.pic10{width: 1000px; height:349px; background: url("../images/pic10.png") no-repeat; border: 0px solid #000000;}
+.pic10{width: 1000px; height:348px; background: url("../images/pic10.png") no-repeat; border: 0px solid #000000;}
 .pic11{width: 1000px; height:264px; background: url("../images/pic11.png") no-repeat; border: 0px solid #000000;}
 .pic12{width: 1000px; height:272px; background: url("../images/pic12.png") no-repeat; border: 0px solid #000000;}
 .pic13{width: 1000px; height:348px; background: url("../images/pic13.png") no-repeat; border: 0px solid #000000;}
@@ -65,4 +65,5 @@ img{border:none;}
 .pic9 .text{color: #ffffff; padding-left: 10px; font-size: 20px;}
 .pic11 .title{color: #ffffff; padding-top: 17px; font-size: 22px; height:32px;}
 .pic11 .text{color: #ffffff; padding-left: 2px; font-size: 20px;}
+.text12{width: 410px; font-size: 24px; color: #ffffff; border: 0px solid #000000; padding-left: 10px; padding-top: 10px; float: left;}
 .text15{width: 500px; font-size: 24px; color: #000; padding-left: 100px; padding-top: 20px; float: left;}
