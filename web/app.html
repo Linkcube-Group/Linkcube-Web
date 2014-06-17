@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>APP下载_Linkcube 连酷，连爱</title>
+<!--[if IE 6]>
+<script src="/templets/default/js/png.js"></script>
+<![endif]-->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+<body>
+<div class="head">
+	<div class="w1000">
+		<a href="./index.html" class="lk logo3"><span>Linkcube 连酷，连爱</span></a>
+		<div class="menu" id="menu">
+			<a href="./index.html" class="menu0" id="menu_">首页</a>
+			<a href="#" class="cur1" id="menu_1" style="display:none;" >产品</a>
+			<a href="./buy.html" class="menu2" id="menu_2">订购</a>
+			<a href="./app.html" class="cur3" id="menu_3">APP下载</a>
+			<a href="./question.html" class="menu4" id="menu_4">常见问题</a>
+			<a href="./contact.html" class="menu5" id="menu_5">联系我们</a>
+		
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+var menu = document.getElementById("menu");
+
+for(var i=0;i<menu.children.length;i++){
+	menu.children[i].onmouseover = addc;
+	menu.children[i].onmouseout = clc;
+}
+
+function addc(){
+	var menu = document.getElementById("menu");
+	for(var i=0;i<menu.children.length;i++){
+		if(menu.children[i]==this){
+			this.className = 'cur'+i;
+		}
+		else{
+			menu.children[i].className = 'menu'+i;
+		}
+	}
+}
+
+function clc(){
+	var menu = document.getElementById("menu");
+	var cruid = document.getElementById("menu_3");
+	for(var i=0;i<menu.children.length;i++){
+		if(menu.children[i]==cruid){
+			cruid.className = 'cur'+i;
+		}
+		else{
+			menu.children[i].className = 'menu'+i;
+		}
+	}
+}
+</script>
+
+
+<div class="hd clear"></div>
+
+<div class="app">
+	<img src="./images/lkapp.png" class="lkapp"/>
+	<div class="down">
+	<a href="http://www.linkcube.me/software/linkcube.apk" target="_blank"><img src="./images/down_android.png"/></a>
+		<a href="http://www.linkcube.me/html/APPxz/" target="_blank"><img src="./images/down_apple.png"/></a>
+
+		<div class="info">
+			<div class="ver">版&nbsp;&nbsp;&nbsp;本&nbsp;&nbsp;&nbsp;号&nbsp;：2.0.0521<br>更&nbsp;新&nbsp;日&nbsp;期&nbsp;：2014/5/21</div>
+			<div class="ver">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;即将上线...</div>
+		</div>
+	</div>
+</div>
+
+</div>
+<div class="bottom bt_3">
+	<ul class="pic">
+		<a class="sina" href="http://weibo.com/u/3886438747" target="_blank"></a>
+		<a class="weixin" id="weixin"><img src="./images/ewm.jpg" id="ewm"/></a>
+		<a class="email" href="./contact.html" target="_blank"></a>
+		<a class="face" href="http://www.facebook.com/" target="_blank"></a>
+	</ul>
+</div>
+<script type="text/javascript">
+var weixin = document.getElementById("weixin");
+var ewm = document.getElementById("ewm");
+weixin.onmouseover=function(){
+	ewm.style.display = "block";
+}
+weixin.onmouseout=function(){
+	ewm.style.display = "none";
+}
+</script>
+<div class="w1000 footer">
+	<div>
+		<a href="./index.html">首页</a>
+		
+		<span>|</span><a href="./buy.html">订购</a>
+		
+		<span>|</span><a href="./app.html">APP下载</a>
+		
+		<span>|</span><a href="./question.html">常见问题</a>
+		
+		<span>|</span><a href="./contact.html">联系我们</a>
+		
+	</div>
+	<div class="copy">Copyright &copy; 2013-2015 Linkcube. All Rights Reserved.</div>
+</div>
+
+</body>
+</html>
