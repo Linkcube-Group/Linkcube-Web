@@ -121,6 +121,7 @@ img{border:none;}
 
 .app{width:950px;margin:0 auto;background:#d6d6d6;padding:80px 0 80px 50px;}
 .app .lkapp {float: left;}
+.app .lkapp a {color: #000000}
 .app .down {display: inline-block; padding-top: 10px;}
 .app .down a{margin-left:60px; display: inline-block;}
 .app .info{overflow:hidden;zoom:1;}
