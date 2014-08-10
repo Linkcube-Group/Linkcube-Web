@@ -8,6 +8,54 @@
 <![endif]-->
 <link rel="shortcut icon" href="favicon.ico" />
 <link rel="stylesheet" type="text/css" href="./css/style.css" />
+<script type="text/javascript">
+function altRows(id){
+	if(document.getElementsByTagName){  
+		
+		var table = document.getElementById(id);  
+		var rows = table.getElementsByTagName("tr"); 
+		 
+		for(i = 0; i < rows.length; i++){          
+			if(i % 2 == 0){
+				rows[i].className = "evenrowcolor";
+			}else{
+				rows[i].className = "oddrowcolor";
+			}      
+		}
+	}
+}
+
+window.onload=function(){
+	altRows('alternatecolor');
+}
+</script>
+<style type="text/css">
+table.altrowstable {
+	font-size:14px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #a9c6c9;
+	border-collapse: collapse;
+}
+table.altrowstable th {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #a9c6c9;
+}
+table.altrowstable td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #a9c6c9;
+}
+.oddrowcolor{
+	background-color:#d4e3e5;
+}
+.evenrowcolor{
+	background-color:#c3dde0;
+}
+</style>
 </head>
 <body>
 <div class="head">
@@ -64,15 +112,46 @@ function clc(){
 <div class="app">
 	<div class="lkapp">
 		<img src="./images/lkapp.png">
-		<div style="padding-left:35px;"><a href="./app_list.html">历史版本</a></div>
+		<div style="padding-left:35px;"><a href="./app.html">新版下载</a></div>
 	</div>
-	<div class="down">
-		<a href="http://www.linkcube.me/software/linkcube.apk" target="_blank"><img src="./images/down_android.png"/></a>
-		<a href="http://www.linkcube.me/html/APPxz/" target="_blank"><img src="./images/down_apple.png"/></a>
-		<div class="info">
-			<div class="ver">版&nbsp;&nbsp;&nbsp;本&nbsp;&nbsp;&nbsp;号&nbsp;：2.1.0808<br>更&nbsp;新&nbsp;日&nbsp;期&nbsp;：2014/8/8</div>
-			<div class="ver">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;即将上线...</div>
-		</div>
+	<div class="versions">
+		<table class="altrowstable" id="alternatecolor">
+			<tr>
+				<th>版本</th>
+				<th>更新日期</th>
+				<th>描述</th>
+			</tr>
+			<tr>
+				<td>2.0.0521</td>
+				<td>2014-05-21</td>
+				<td>修改了部分用户会多次出现更新提示的bug</td>
+			</tr>
+			<tr>
+				<td>2.1.0710</td>
+				<td>2014-07-10</td>
+				<td>1.添加了聊天消息阅后即焚的功能<br>2.增加了多语言设置</td>
+			</tr>
+			<tr>
+				<td>2.1.0718</td>
+				<td>2014-08-18</td>
+				<td>完善了音浪模式算法，同步效果更佳</td>
+			</tr>
+			<tr>
+				<td>2.1.0729</td>
+				<td>2014-07-29</td>
+				<td>1.新增"语音模式"，带来不一样的体验<br>2.完善"音乐模式"，效果更流畅</td>
+			</tr>
+			<tr>
+				<td>2.1.0801</td>
+				<td>2014-08-01</td>
+				<td>优化了摇一摇功能的算法</td>
+			</tr>
+			<tr>
+				<td>2.1.0808</td>
+				<td>2014-08-08</td>
+				<td>新增配套使用推荐APP，让震动更爽一点!</td>
+			</tr>
+		</table>
 	</div>
 </div>
 
